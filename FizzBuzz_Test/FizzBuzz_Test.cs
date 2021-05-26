@@ -9,6 +9,8 @@ namespace FizzBuzz_Test
         [Fact]
         public void return_number_one()
         {
+            var returnvalue = FizzBuzzImpl.FizzBuzz(1);
+            Assert.Equal("1", returnvalue);
         }
     }
 }
