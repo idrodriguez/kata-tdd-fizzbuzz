@@ -18,5 +18,11 @@ namespace FizzBuzz_Test
             var returnvalue = FizzBuzzImpl.FizzBuzz(2);
             Assert.Equal("2", returnvalue);
         }
+
+        [Fact]
+        public void return_number_four() {
+            var returnvalue = FizzBuzzImpl.FizzBuzz(4);
+            Assert.Equal("4", returnvalue);
+        }
     }
 }
