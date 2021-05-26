@@ -32,6 +32,16 @@ namespace FizzBuzz_Test
             Assert.Equal("4", returnvalue);
         }
 
+        [Theory]
+        [InlineData(3)]
+        [InlineData(6)]
+        [InlineData(9)]
+        [InlineData(12)]
+        public void return_only_fizz_numbers(int inputValue)
+        {
+            var returnvalue = FizzBuzzImpl.FizzBuzz(inputValue);
+            Assert.Equal("Fizz", returnvalue);
+        }
 
     }
 }
