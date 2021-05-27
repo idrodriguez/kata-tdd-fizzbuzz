@@ -47,12 +47,6 @@ namespace FizzBuzz_Test
             Assert.Equal("Buzz", returnvalue);
         }
 
-        [Fact]
-        public void return_number_fifteen_fizzbuzz() {
-            var returnvalue = FizzBuzzImpl.FizzBuzz(15);
-            Assert.Equal("FizzBuzz", returnvalue);
-        }
-
         [Theory]
         [InlineData(15)]
         [InlineData(30)]
