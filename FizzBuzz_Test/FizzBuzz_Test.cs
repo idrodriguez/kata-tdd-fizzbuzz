@@ -20,13 +20,6 @@ namespace FizzBuzz_Test
         }
 
         [Fact]
-        public void return_numberThree_fizz() {
-            var returnvalue = FizzBuzzImpl.FizzBuzz(3);
-            Assert.Equal("Fizz", returnvalue);
-        }
-
-
-        [Fact]
         public void return_number_four() {
             var returnvalue = FizzBuzzImpl.FizzBuzz(4);
             Assert.Equal("4", returnvalue);
@@ -43,5 +36,10 @@ namespace FizzBuzz_Test
             Assert.Equal("Fizz", returnvalue);
         }
 
+        [Fact]
+        public void return_number_five_buzz() {
+            var returnvalue = FizzBuzzImpl.FizzBuzz(5);
+            Assert.Equal("Buzz", returnvalue);
+        }
     }
 }
